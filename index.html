@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamil Nadu Youth Scheme</title>
+  <link rel="icon" type="image/png" href="/tn_logo.png" />
+
+  <style>
+
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+    }
+
+    
+    /* HEADER DESIGN */
+
+    .top-bar{
+      background:#3d2c84;
+      color:white;
+      padding:10px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:14px;
+    }
+
+    .header{
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    align-items:center;
+    border-bottom:4px solid #4f67e8;
+}
+
+.cm-photo{
+    margin-left:auto;
+}
+
+.cm-photo img{
+    width:100px;
+    height:auto;
+    border-radius:5px;
+}
+    .header{
+      background:white;
+      padding:15px 40px;
+      display:flex;
+      align-items:center;
+      gap:20px;
+      border-bottom:4px solid #4f67e8;
+    }
+
+    .header img{
+      width:90px;
+    }
+
+    .header-text h1{
+      color:#0047d4;
+      font-size:38px;
+    }
+
+    .header-text h2{
+      color:#0047d4;
+      font-size:18px;
+      margin-top:5px;
+    }
+
+    .navbar{
+      background:#4f67e8;
+      padding:15px;
+      display:flex;
+      justify-content:center;
+      gap:35px;
+    }
+
+    .navbar a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .navbar a:hover{
+      color:yellow;
+    }
+
+    /* FORM */
+
+    .container{
+      width:80%;
+      margin:40px auto;
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .container h2{
+      text-align:center;
+      margin-bottom:30px;
+      color:#2d2d2d;
+    }
+
+    .form-group{
+      margin-bottom:20px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-weight:bold;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:15px;
+    }
+
+    input[type="file"]{
+      background:#f9f9f9;
+      padding:10px;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:8px;
+      background:#0066ff;
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#004ecc;
+    }
+
+    .success{
+      display:none;
+      text-align:center;
+      padding:60px;
+    }
+
+    .success h1{
+      color:#ff0066;
+      font-size:42px;
+    }
+
+    .success p{
+      font-size:24px;
+      margin-top:20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+   
+
+
+
+  <div class="top-bar">
+      <div>தமிழ்நாடு அரசு</div>
+      <div>Government Of Tamil Nadu Portal</div>
+  </div>
+
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <img src="/tn_logo.png" alt="TN Logo">
+
+    <div class="header-text">
+      <h1>தமிழ்நாடு அரசு</h1>
+      <h2>Government Of Tamil Nadu</h2>
+    </div>
+
+    <div class="cm-photo">
+    <img src="/cm.jpg" alt="CM Photo">
+</div>
+
+
+  </div>
+
+  <!-- NAVBAR -->
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Departments</a>
+    <a href="#">Schemes</a>
+    <a href="#">Certificates</a>
+    <a href="#">Scholarship</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- FORM SECTION -->
+
+  <div class="container" id="formPage">
+
+    <h2>Tamil Nadu Youth Scheme</h2>
+
+    <form id="studentForm">
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Age</label>
+        <input type="number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select required>
+          <option>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>School / College Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>Current Course</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>10th Percentage</label>
+        <input type="number" required>
+      </div>
+
+      <div class="form-group">
+        <label>12th Percentage</label>
+        <input type="number" required>
+      </div>
+      <div class="form-group">
+        <label>Account Holder Name</label>
+        <input type="text" required>
+      </div>
+      <div class="form-group">
+        <label>Bank Account Number</label>
+        <input type="text" required>
+      </div>
+      <div class="form-group">
+        <label>Bank Branch</label>
+        <input type="text" required>
+      </div>
+      <div class="form-group">
+        <label>IFSC Code</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label>UG CGPA / Percentage</label>
+        <input type="text">
+      </div>
+
+      <div class="form-group">
+        <label>Upload 10th Marksheet</label>
+        <input type="file" required>
+      </div>
+
+      <div class="form-group">
+        <label>Upload 12th Marksheet</label>
+        <input type="file" required>
+      </div>
+
+      <div class="form-group">
+        <label>Upload UG Marksheet</label>
+        <input type="file">
+      </div>
+
+      <div class="form-group">
+        <label>Upload Community Certificate</label>
+        <input type="file">
+      </div>
+
+      <div class="form-group">
+        <label>Upload Income Certificate</label>
+        <input type="file">
+      </div>
+
+      <div class="form-group">
+        <label>Upload Transfer Certificate</label>
+        <input type="file">
+      </div>
+
+      <div class="form-group">
+        <label>Address</label>
+        <textarea rows="4"></textarea>
+      </div>
+      <div class="form-group">
+      <label>Live Photo Capture</label>
+
+        <input 
+            type="file" 
+            accept="image/*"
+            capture="user"
+            id="photoUpload"
+            required
+        >
+        </div>
+
+      <button type="submit">
+        Submit Application
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- SUCCESS PAGE -->
+
+  <div class="container success" id="successPage">
+
+    <h1>🎉 Application Submitted 🎉</h1>
+
+    <p>
+      All the best! <br><br>
+      The Amount will be successfully credited to your account. <br><br>
+      For any queries, please contact the support team - 1800.
+    </p>
+
+  </div>
+
+  <script>
+
+    document.getElementById("studentForm").addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      document.getElementById("formPage").style.display = "none";
+
+      document.getElementById("successPage").style.display = "block";
+
+    });
+
+  </script>
+
+</body>
+</html>
